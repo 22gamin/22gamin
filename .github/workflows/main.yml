@@ -24,12 +24,12 @@ jobs:
 
       - name: Generate 3D grass
         run: |
-          github-profile-3d-contrib --username ${{ github.repository_owner }} --token ${{ secrets.GITHUB_TOKEN }}
+          github-profile-3d-contrib --username ${{ github.repository_owner }} --token ${{ secrets.TOKEN }}
 
       - name: Commit & Push
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "22gamin"
+          git config --global user.email "gamin3182@gmail.com"
           git add -A
           git commit -m "generated 3D grass"
           git push
